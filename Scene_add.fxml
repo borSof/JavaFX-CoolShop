@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="590.0" prefWidth="654.0" style="-fx-background-color: Purple;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cool_shop.AddController">
+   <children>
+      <Button fx:id="remove_button" layoutX="302.0" layoutY="444.0" mnemonicParsing="false" onAction="#remove" prefHeight="51.0" prefWidth="101.0" style="-fx-background-color: DARKCYAN;" text="Remove" />
+      <Button layoutX="553.0" layoutY="551.0" mnemonicParsing="false" onAction="#toEdit" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: DARKCYAN;" text="Edit" />
+      <Button fx:id="add_button" layoutX="309.0" layoutY="320.0" mnemonicParsing="false" onAction="#add" prefHeight="51.0" prefWidth="101.0" style="-fx-background-color: DARKCYAN;" text="Add" />
+      <TableView fx:id="TableView_output" layoutX="105.0" layoutY="56.0" prefHeight="206.0" prefWidth="445.0" style="-fx-background-color: DARKCYAN;">
+         <columns>
+            <TableColumn fx:id="IdColumn" prefWidth="47.0" text="ID" />
+            <TableColumn fx:id="NameColumn" prefWidth="323.0" text="Name" />
+            <TableColumn fx:id="PriceColumn" prefWidth="74.0" text="Price" />
+         </columns>
+      </TableView>
+      <TextField fx:id="textField_add_name" layoutX="101.0" layoutY="308.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="textField_add_price" layoutX="101.0" layoutY="358.0" prefHeight="25.0" prefWidth="179.0" />
+      <Label layoutX="101.0" layoutY="283.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="333.0" text="Price" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="error_label_add" layoutX="101.0" layoutY="506.0" prefHeight="40.0" prefWidth="179.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField_remove_byID" layoutX="101.0" layoutY="457.0" prefHeight="25.0" prefWidth="179.0" />
+      <Label layoutX="101.0" layoutY="432.0" text="Remove by id" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

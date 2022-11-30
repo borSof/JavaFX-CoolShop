@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="590.0" prefWidth="654.0" style="-fx-background-color: Purple;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cool_shop.MainMenuControler">
+   <children>
+      <Button layoutX="372.0" layoutY="418.0" mnemonicParsing="false" onAction="#switchToSceneEdit" prefHeight="63.0" prefWidth="136.0" style="-fx-background-color: DARKCYAN;" text="Edit" />
+      <Button layoutX="131.0" layoutY="418.0" mnemonicParsing="false" onAction="#switchToSceneAdd" prefHeight="63.0" prefWidth="136.0" style="-fx-background-color: DARKCYAN;" text="Add/Remove" />
+      <TableView fx:id="TableView_output_main" layoutX="100.0" layoutY="95.0" prefHeight="206.0" prefWidth="445.0" style="-fx-background-color: DARKCYAN;">
+         <columns>
+            <TableColumn fx:id="IdColumn_main" prefWidth="84.0" text="ID" />
+            <TableColumn fx:id="NameColumn_main" prefWidth="259.0" text="Name" />
+            <TableColumn fx:id="PriceColumn_main" prefWidth="101.0" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
